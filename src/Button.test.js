@@ -7,3 +7,10 @@ test("click event",()=>{
     fireEvent.click(btn)
     expect(screen.getByText("update dataa")).toBeInTheDocument()
 })
+
+test("method testing 1",()=>{
+    render (<Test/>)
+    const btn=screen.getByTestId("btn1")
+    fireEvent.click(btn)
+    expect (screen.getByText("update dataa")).toBeInTheDocument()
+})

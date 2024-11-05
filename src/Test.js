@@ -5,7 +5,7 @@ const Test = () => {
   return (
     <div>
         {/* <h1>Button test case</h1> */}
-        <button onClick={()=>setData("update dataa")}>Save</button>
+        <button data-testid="btn1" onClick={()=>setData("update dataa")}>Save</button>
         <h1>{data}</h1>
     </div>
   )
